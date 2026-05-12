@@ -10,11 +10,6 @@
     <header>
         <nav>
             <h1>My Portfolio</h1>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -22,12 +17,21 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
     </header>
 
     <section id="hero">
+        <div class="hero-background">
+            <canvas id="hero-canvas"></canvas>
+        </div>
         <div class="hero-content">
-        <h1>Hi! I am Christina Akou.</h1>
+            <h1>Hi! I am Christina Akou.</h1>
             <p>Information Technology Major</p>
             <p>Passionate about technology and innovation.</p>
             <a href="https://github.com/somisschristy" target="_blank" class="btn">View My GitHub</a>
