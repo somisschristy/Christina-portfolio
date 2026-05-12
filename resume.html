@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Christina Akou</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Christina Akou</h1>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="resume-hero">
+        <div class="resume-hero-content">
+            <h2>My Resume</h2>
+            <p>Information Technology Major | Cloud Computing Enthusiast | Software Developer</p>
+            <div class="resume-actions">
+                <button class="btn btn-primary" onclick="openPDFModal()">View Full Resume (PDF)</button>
+                <a href="assets/resume.pdf" download class="btn btn-secondary">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Modal -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePDFModal()">&times;</span>
+            <iframe id="pdf-viewer" src="assets/resume.pdf" type="application/pdf"></iframe>
+        </div>
+    </div>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="education-header">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <span class="date">Expected Graduation: 2026</span>
+            </div>
+            <p class="institution">Winston-Salem State University</p>
+            <p class="description">Focused on cloud computing, software development, and innovative technology solutions. Strong foundation in computer science principles, database management, and full-stack web development.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Student Worker – Cloud & Data Services</h3>
+                <span class="date">Summer 2025 – Present</span>
+            </div>
+            <p class="company">Nationwide</p>
+            <p class="description">Supported Marketing and Cloud Engineering teams by assisting with cloud-based services, deployment workflows, and technical support requests. Worked within Agile environments while gaining hands-on experience with AWS, Databricks, Python, and DevOps practices.</p>
+            <ul class="achievement-list">
+                <li>Maintained and monitored deployment pipelines for Databricks data workflows and AWS-based services</li>
+                <li>Managed AWS configuration settings across multiple environments to support scalable operations</li>
+                <li>Collaborated in Agile ceremonies including sprint planning, retrospectives, and standups</li>
+                <li>Developed foundational experience in cloud infrastructure management, SQL, and Python</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Cloud & CMS Intern – Marketing Content Management</h3>
+                <span class="date">Summer 2025</span>
+            </div>
+            <p class="company">Nationwide</p>
+            <p class="description">Collaborated with application and content management teams to support web content migration projects and cloud-based digital experience platforms. Assisted with testing, documentation, and Agile-based workflow processes.</p>
+            <ul class="achievement-list">
+                <li>Assisted with migrating web content from Contentful CMS to Tridion Digital Experience Platform</li>
+                <li>Contributed to requirement documentation and testing for successful CMS migrations</li>
+                <li>Participated in Agile workflows and cross-functional collaboration with development teams</li>
+                <li>Supported cloud-based content delivery initiatives and project presentations</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Web Development Project Lead</h3>
+                <span class="date">Summer 2022</span>
+            </div>
+            <p class="company">G-Code Web Development Program</p>
+            <p class="description">Designed and developed an environmental advocacy website focused on raising awareness about environmental issues and elephant extinction. Led the project’s design structure and front-end implementation.</p>
+            <ul class="achievement-list">
+                <li>Developed responsive web pages using HTML, CSS, JavaScript, and GitHub</li>
+                <li>Managed code organization and project structure using Visual Studio Code</li>
+                <li>Focused on accessible and user-friendly UI/UX design principles</li>
+                <li>Collaborated within a development environment using version control tools</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-category">
+            <h3>Cloud & Infrastructure</h3>
+            <div class="skills-list">
+                <span class="skill-item">AWS Cloud Services</span>
+                <span class="skill-item">Cloud Infrastructure Management</span>
+                <span class="skill-item">DevOps Fundamentals</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <div class="skills-list">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">Java</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">SQL</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3>Web & Frontend</h3>
+            <div class="skills-list">
+                <span class="skill-item">HTML & CSS</span>
+                <span class="skill-item">Angular & TypeScript</span>
+                <span class="skill-item">Web Development</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3>Tools & Platforms</h3>
+            <div class="skills-list">
+                <span class="skill-item">Git & GitHub</span>
+                <span class="skill-item">Databricks</span>
+                <span class="skill-item">Tableau</span>
+                <span class="skill-item">Contentful & Tridion CMS</span>
+                <span class="skill-item">Microsoft 365</span>
+                <span class="skill-item">Adobe Photoshop</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <h3>Methodologies & Practices</h3>
+            <div class="skills-list">
+                <span class="skill-item">Agile & Scrum</span>
+                <span class="skill-item">Sprint Planning</span>
+                <span class="skill-item">Standups & Collaboration</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="highlights">
+        <h2>Key Highlights</h2>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <div class="highlight-icon">🎓</div>
+                <h3>Education</h3>
+                <p>IT degree from Winston-Salem State University with focus on cloud computing and software development</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">☁️</div>
+                <h3>Cloud Expertise</h3>
+                <p>Hands-on experience with AWS, cloud infrastructure, and DevOps fundamentals</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">💻</div>
+                <h3>Full-Stack Development</h3>
+                <p>Proficient in web development with modern technologies including React, Angular, and Node.js</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🚀</div>
+                <h3>Agile Mindset</h3>
+                <p>Experience working in Agile environments with strong collaboration and sprint planning skills</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">📊</div>
+                <h3>Data & Analytics</h3>
+                <p>Working knowledge of Databricks, Tableau, and data analysis techniques</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🎨</div>
+                <h3>Creative Design</h3>
+                <p>Experience with design tools including Adobe Photoshop and modern UI/UX principles</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Christina Akou. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

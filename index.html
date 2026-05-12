@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christina Akou - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+        <h1>Hi! I am Christina Akou.</h1>
+            <p>Information Technology Major</p>
+            <p>Passionate about technology and innovation.</p>
+            <a href="https://github.com/somisschristy" target="_blank" class="btn">View My GitHub</a>
+        </div>
+        <div class="hero-image">
+            <!-- Placeholder for profile photo -->
+            <img src="assets/profile.jpg" alt="Christina Akou" id="profile-img">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>Hi! I am Christina Akou, an Information Technology student at Winston-Salem State University with a strong passion for cloud computing, software development, and innovative technology solutions. I enjoy combining creativity with technical problem-solving to build systems and applications that improve efficiency and user experience.</p>
+            <p>Through hands-on experience in cloud services, web development, content management systems, and Agile environments, I have developed skills in AWS, Python, Java, Databricks, and modern web technologies. I am continuously expanding my technical knowledge while seeking opportunities to contribute to impactful projects that bridge technology and real-world solutions.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">☁️</div>
+                <div class="skill">AWS Cloud Services</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <div class="skill">Python</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">☕</div>
+                <div class="skill">Java</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">✨</div>
+                <div class="skill">JavaScript</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🏗️</div>
+                <div class="skill">HTML & CSS</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <div class="skill">SQL</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <div class="skill">Angular & TypeScript</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <div class="skill">Databricks</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔄</div>
+                <div class="skill">Git & GitHub</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📈</div>
+                <div class="skill">Tableau</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🚀</div>
+                <div class="skill">Agile & Scrum</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <div class="skill">Web Development</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>View my complete resume with detailed work experience, education, and skills:</p>
+        <div class="resume-buttons">
+            <a href="resume.html" class="btn btn-primary">View Full Resume</a>
+            <a href="assets/resume.pdf" download class="btn btn-secondary">Download PDF</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Direct Contact</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <p><strong>Email</strong></p>
+                        <a href="mailto:cakou118@rams.wssu.edu">cakou118@rams.wssu.edu</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <p><strong>Location</strong></p>
+                        <p>Greensboro, North Carolina</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🔗</span>
+                    <div>
+                        <p><strong>LinkedIn</strong></p>
+                        <a href="https://www.linkedin.com/in/christina-akou-35724423a" target="_blank">Connect with me</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h3>Send Me a Message</h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Christina Akou. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
